@@ -1,10 +1,13 @@
+import 'package:aula01/components/main_title.dart';
 import 'package:aula01/res/colors.dart';
+import 'package:aula01/res/images.dart';
 import 'package:flutter/material.dart';
 
 class CubosDarkContainer extends StatelessWidget {
   final Widget child;
+  final String text; //optional
 
-  const CubosDarkContainer({Key key, this.child}) : super(key: key);
+  const CubosDarkContainer({Key key, this.child, this.text}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,6 +15,8 @@ class CubosDarkContainer extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     //triangle size
     final size = (height <= width) ? height * 0.46 : width * 0.46;
+
+    final _margin = width / 8.0;
 
     return Container(
       color: AppColors.black,
@@ -29,7 +34,21 @@ class CubosDarkContainer extends StatelessWidget {
               painter: _PinkTrianglePainter(),
             ),
           ),
-          child,
+          Positioned(
+            top: 10,
+            right: 30,
+            child: Image.asset(AppImages.logo),
+            height: 100,
+          ),
+          Padding(
+            padding: EdgeInsets.all(_margin),
+            child: Stack(
+              children: <Widget>[
+                if (text != null) Center(child: MainTitle(text: text)),
+                child,
+              ],
+            ),
+          )
         ],
       ),
     );
