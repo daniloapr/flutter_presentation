@@ -1,5 +1,6 @@
 import 'package:aula01/res/dimens.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MainTitle extends StatelessWidget {
   final String text;
@@ -13,8 +14,8 @@ class MainTitle extends StatelessWidget {
     return Text(
       text,
       style: TextStyle(
-        fontSize: Dimens.main_title_text_size,
-        fontWeight: FontWeight.w500,
+        fontSize: 80,
+        fontWeight: FontWeight.bold,
         color: Colors.white,
       ),
     );

@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.cyan,
         visualDensity: VisualDensity.adaptivePlatformDensity,
-        fontFamily: 'montserrat',
+        fontFamily: 'Montserrart',
       ),
       home: IntroPage(),
     );

@@ -10,7 +10,7 @@ class DarkContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: AppColors.black,
-      child: child,
+      child: Stack(),
     );
   }
 }

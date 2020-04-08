@@ -8,11 +8,7 @@ class IntroPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: CubosDarkContainer(
-        child: Center(
-          child: MainTitle(
-            text: 'Hello World!',
-          ),
-        ),
+        text: 'Conteúdo da aula',
       ),
     );
   }

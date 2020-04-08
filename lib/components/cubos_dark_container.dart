@@ -45,7 +45,7 @@ class CubosDarkContainer extends StatelessWidget {
             child: Stack(
               children: <Widget>[
                 if (text != null) Center(child: MainTitle(text: text)),
-                child,
+                if (child != null) child,
               ],
             ),
           )
