@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 import 'boxed_text.dart';
+import 'bullet_list.dart';
 
 class TopicList extends StatelessWidget {
   final String title;
@@ -15,7 +16,6 @@ class TopicList extends StatelessWidget {
     return Wrap(
       children: [
         Container(
-          decoration: BoxDecoration(color: Colors.black),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
@@ -36,15 +36,7 @@ class TopicList extends StatelessWidget {
         ),
       )
     ];
-    list.forEach((text) => widgetList.add(Padding(
-          padding: const EdgeInsets.only(bottom: 16),
-          child: Text(
-            "● " + text,
-            style: TextStyle(
-                color: Colors.white, fontSize: 30, fontWeight: FontWeight.w500),
-          ),
-        )));
-
+    widgetList.add(BulletList(list));
     return widgetList;
   }
 }

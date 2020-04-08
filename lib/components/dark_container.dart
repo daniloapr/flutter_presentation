@@ -9,10 +9,11 @@ class DarkContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final _width = MediaQuery.of(context).size.width;
-    final _margin = _width / 8.0;
+    final _margin = _width / 16.0;
     return Container(
       color: AppColors.black,
       child: Stack(
+        fit: StackFit.expand,
         children: <Widget>[
           Positioned(
             top: 10,

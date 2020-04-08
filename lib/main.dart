@@ -1,3 +1,4 @@
+import 'package:aula01/pages/content_page.dart';
 import 'package:aula01/pages/intro_page.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         fontFamily: 'montserrat',
       ),
-      home: IntroPage(),
+      home: ContentPage(),
     );
   }
 }

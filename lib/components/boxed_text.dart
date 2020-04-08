@@ -17,7 +17,7 @@ class BoxedText extends StatelessWidget {
           child: Text(
             text,
             style: TextStyle(
-                color: Colors.white, fontSize: 50, fontFamily: 'montserrat'),
+                color: Colors.white, fontSize: 60, fontFamily: 'montserrat'),
           ),
         )
       ],
