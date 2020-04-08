@@ -5,6 +5,15 @@ import 'package:flutter/material.dart';
 class IntroPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return CubosDarkContainer();
+    return Scaffold(
+      body: CubosDarkContainer(
+        child: Center(
+          child: Text(
+            'Hello World',
+            style: TextStyle(fontSize: 50),
+          ),
+        ),
+      ),
+    );
   }
 }

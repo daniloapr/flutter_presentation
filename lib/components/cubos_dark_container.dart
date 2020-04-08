@@ -28,7 +28,8 @@ class CubosDarkContainer extends StatelessWidget {
               size: Size(size, size),
               painter: _PinkTrianglePainter(),
             ),
-          )
+          ),
+          child,
         ],
       ),
     );
