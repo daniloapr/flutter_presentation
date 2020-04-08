@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class CubosDarkContainer extends StatelessWidget {
   final Widget child;
-  final String text; //optional
+  final String text;
 
   const CubosDarkContainer({Key key, this.child, this.text}) : super(key: key);
 
