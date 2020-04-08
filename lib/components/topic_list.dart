@@ -7,7 +7,7 @@ import 'bullet_list.dart';
 
 class TopicList extends StatelessWidget {
   final String title;
-  final List<String> list;
+  final Map<String, List<String>> list;
 
   const TopicList({@required this.title, @required this.list});
 

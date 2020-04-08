@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 
 class BulletList extends StatelessWidget {
   @required
-  final List<String> _list;
+  final Map<String, List<String>> _list;
 
   BulletList(this._list);
 
@@ -16,17 +16,28 @@ class BulletList extends StatelessWidget {
   }
 
   List<Widget> _getList() {
-    return _list
-        .map((text) => Padding(
-              padding: const EdgeInsets.only(bottom: 16),
-              child: Text(
-                "● " + text,
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 40,
-                    fontWeight: FontWeight.w500),
-              ),
-            ))
-        .toList();
+    List<Widget> widgets = [];
+    _list.entries.forEach((entry) {
+      widgets.add(Padding(
+        padding: const EdgeInsets.only(top: 32),
+        child: Text(
+          "● " + entry.key,
+          style: TextStyle(
+              color: Colors.white, fontSize: 40, fontWeight: FontWeight.w500),
+        ),
+      ));
+      entry.value.forEach((element) {
+        widgets.add(Padding(
+          padding: const EdgeInsets.only(left: 40, top: 8),
+          child: Text(
+            "○ " + element,
+            style: TextStyle(
+                color: Colors.white, fontSize: 40, fontWeight: FontWeight.w500),
+          ),
+        ));
+      });
+    });
+
+    return widgets;
   }
 }

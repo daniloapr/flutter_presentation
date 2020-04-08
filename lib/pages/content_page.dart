@@ -14,15 +14,15 @@ class ContentPage extends StatelessWidget {
         child: DarkContainer(
           child: Padding(
             padding: const EdgeInsets.only(left: 80.0, top: 40.0),
-            child: TopicList(title: "Conteúdo", list: [
-              "O que é o Flutter?",
-              "Widgets",
-              "Dart",
-              "Porque o Flutter?",
-              "Porque não?",
-              "Constuindo o primeiro app",
-              "Desafio"
-            ]),
+            child: TopicList(title: "Conteúdo", list: {
+              "O que é o Flutter?": [],
+              "Widgets": [],
+              "Dart": [],
+              "Porque o Flutter?": [],
+              "Porque não?": [],
+              "Constuindo o primeiro app": [],
+              "Desafio": []
+            }),
           ),
         ),
       ),

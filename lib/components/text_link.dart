@@ -7,8 +7,7 @@ class TextLink extends StatelessWidget {
   final String link;
   final double fontSize;
 
-  const TextLink(
-      {Key key, @required this.text, @required this.link, this.fontSize = 40})
+  const TextLink({Key key, this.text, @required this.link, this.fontSize = 40})
       : super(key: key);
 
   @override
@@ -17,7 +16,7 @@ class TextLink extends StatelessWidget {
       text: TextSpan(
         children: [
           TextSpan(
-            text: text,
+            text: text != null ? text : link,
             style: TextStyle(
                 color: Colors.blue,
                 decoration: TextDecoration.underline,
