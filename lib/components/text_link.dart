@@ -34,3 +34,17 @@ class TextLink extends StatelessWidget {
     );
   }
 }
+
+// Column(
+//           children: <Widget>[
+//             TextLink(
+//               text: 'Material Design',
+//               link: 'https://flutter.dev/docs/development/ui/widgets/material',
+//             ),
+//             SizedBox(height: 20),
+//             TextLink(
+//               text: 'Material Design',
+//               link: 'https://flutter.dev/docs/development/ui/widgets/cupertino',
+//             ),
+//           ],
+//         ),
