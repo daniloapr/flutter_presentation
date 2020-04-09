@@ -19,7 +19,7 @@ class BulletList extends StatelessWidget {
     List<Widget> widgets = [];
     _list.entries.forEach((entry) {
       widgets.add(Padding(
-        padding: const EdgeInsets.only(top: 16),
+        padding: const EdgeInsets.only(top: 12),
         child: Text(
           "● " + entry.key,
           style: TextStyle(
