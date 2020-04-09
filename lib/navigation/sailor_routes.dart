@@ -6,6 +6,7 @@ import 'package:aula01/pages/dart_title_page.dart';
 import 'package:aula01/pages/intro_page.dart';
 import 'package:aula01/pages/what_is_flutter_page.dart';
 import 'package:aula01/pages/what_is_flutter_title_page.dart';
+import 'package:aula01/pages/why_flutter_conclusion_page.dart';
 import 'package:aula01/pages/why_flutter_page.dart';
 import 'package:sailor/sailor.dart';
 
