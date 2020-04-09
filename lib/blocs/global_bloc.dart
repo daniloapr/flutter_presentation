@@ -44,7 +44,7 @@ class GlobalBloc extends BlocBase {
 
   void onKeyHandled() {
     allowKeyPress = false;
-    Future.delayed(Duration(milliseconds: 500), () {
+    Future.delayed(Duration(milliseconds: 200), () {
       allowKeyPress = true;
     });
   }

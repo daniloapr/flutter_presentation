@@ -20,7 +20,6 @@ class _GlobalWidgetState extends State<GlobalWidget> {
   @override
   void dispose() {
     _focusNode.dispose();
-    _bloc.dispose();
     super.dispose();
   }
 
