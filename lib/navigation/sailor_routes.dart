@@ -9,6 +9,7 @@ import 'package:aula01/pages/what_is_flutter_page.dart';
 import 'package:aula01/pages/what_is_flutter_title_page.dart';
 import 'package:aula01/pages/why_flutter_conclusion_page.dart';
 import 'package:aula01/pages/why_flutter_page.dart';
+import 'package:aula01/pages/why_not_flutter_page.dart';
 import 'package:sailor/sailor.dart';
 
 class SailorRoutes {
@@ -92,6 +93,12 @@ class SailorRoutes {
         },
       ),
       SailorRoute(
+        name: getRoute(PageEnum.adotpers),
+        builder: (context, args, params) {
+          return WhyNotFlutterPage();
+        },
+      ),
+      SailorRoute(
         name: getRoute(PageEnum.counter),
         builder: (context, args, params) {
           return CounterPage();
@@ -121,5 +128,6 @@ enum PageEnum {
   whyFlutterConclusion,
   productivity,
   whyNotFlutter,
+  adotpers,
   counter
 }
