@@ -19,11 +19,11 @@ class BulletList extends StatelessWidget {
     List<Widget> widgets = [];
     _list.entries.forEach((entry) {
       widgets.add(Padding(
-        padding: const EdgeInsets.only(top: 32),
+        padding: const EdgeInsets.only(top: 16),
         child: Text(
           "● " + entry.key,
           style: TextStyle(
-              color: Colors.white, fontSize: 40, fontWeight: FontWeight.w500),
+              color: Colors.white, fontSize: 38, fontWeight: FontWeight.w500),
         ),
       ));
       entry.value.forEach((element) {
@@ -32,7 +32,7 @@ class BulletList extends StatelessWidget {
           child: Text(
             "○ " + element,
             style: TextStyle(
-                color: Colors.white, fontSize: 40, fontWeight: FontWeight.w500),
+                color: Colors.white, fontSize: 36, fontWeight: FontWeight.w500),
           ),
         ));
       });
