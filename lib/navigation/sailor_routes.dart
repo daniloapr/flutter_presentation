@@ -1,5 +1,6 @@
 import 'package:aula01/pages/all_about_widgets_page.dart';
 import 'package:aula01/pages/content_page.dart';
+import 'package:aula01/pages/counter_page.dart';
 import 'package:aula01/pages/dart_page.dart';
 import 'package:aula01/pages/dart_title_page.dart';
 import 'package:aula01/pages/intro_page.dart';
@@ -59,6 +60,12 @@ class SailorRoutes {
         builder: (context, args, params) {
           return WhatIsFlutterPage();
         },
+      ),
+      SailorRoute(
+        name: getRoute(PageEnum.counter),
+        builder: (context, args, params) {
+          return CounterPage();
+        },
       )
     ]);
   }
@@ -80,4 +87,5 @@ enum PageEnum {
   dart,
   whatIsFlutterTitle,
   whatsIsFlutter,
+  counter
 }

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class MyPage extends StatefulWidget {
+class CounterPage extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => _MyPageState();
+  State<StatefulWidget> createState() => _CounterPageState();
 }
 
-class _MyPageState extends State<MyPage> {
+class _CounterPageState extends State<CounterPage> {
   int countA = 0;
   int countB = 0;
 
@@ -37,7 +37,7 @@ class _MyPageState extends State<MyPage> {
     return Scaffold(
       appBar: AppBar(
         title: Title(
-          child: titleText(),
+          child: Text("Contador"),
           color: Colors.blue,
         ),
       ),
@@ -87,10 +87,5 @@ class _MyPageState extends State<MyPage> {
         ],
       ),
     );
-  }
-
-  Widget titleText() {
-    print("Criando titulo");
-    return Text("Contador");
   }
 }
