@@ -1,7 +1,6 @@
 import 'package:aula01/blocs/global_bloc.dart';
 import 'package:bloc_pattern/bloc_pattern.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class GlobalWidget extends StatefulWidget {
   final Widget child;

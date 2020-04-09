@@ -12,15 +12,17 @@ class DartTitlePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return GlobalWidget(
       child: CubosDarkContainer(
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-            MainTitle(text: "Dart"),
-            TextLink(
-              link: "https://dart.dev/",
-            )
-          ])),
+          child: Center(
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              MainTitle(text: "Dart"),
+              TextLink(
+                link: "https://dart.dev/",
+              )
+            ]),
+      )),
     );
   }
 }

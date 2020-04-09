@@ -56,7 +56,7 @@ class SailorRoutes {
         },
       ),
       SailorRoute(
-        name: getRoute(PageEnum.whatIsFlutterTitle),
+        name: getRoute(PageEnum.whatIsFlutter),
         builder: (context, args, params) {
           return WhatIsFlutterPage();
         },
@@ -86,6 +86,6 @@ enum PageEnum {
   dartTitle,
   dart,
   whatIsFlutterTitle,
-  whatsIsFlutter,
+  whatIsFlutter,
   counter
 }

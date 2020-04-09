@@ -11,7 +11,6 @@ class GlobalBloc extends BlocBase {
 
   void navigateForward() {
     final index = _currentPage.index;
-
     if (index < lastPageIndex) {
       _currentPage = _pagesList[index + 1];
       SailorRoutes.navigate(page: _currentPage);
