@@ -38,20 +38,19 @@ class _CounterPageState extends State<CounterPage> {
 
   @override
   Widget build(BuildContext context) {
-    return GlobalWidget(
-      child: DarkContainer(
-        child: Center(
-          child: Container(
-            height: 500,
-            width: 300,
-            child: Scaffold(
-              appBar: AppBar(
-                automaticallyImplyLeading: false,
-                title: Title(
-                  child: Text("Contador"),
-                  color: Colors.blue,
-                ),
+    FocusScope.of(context).requestFocus(_focusNode);
+    return DarkContainer(
+      ignorePadding: true,
+      child: Center(
+        child: Container(
+          child: Scaffold(
+            appBar: AppBar(
+              automaticallyImplyLeading: false,
+              title: Title(
+                child: Text("Contador"),
+                color: Colors.blue,
               ),
+            ),
               body: Container(
                 decoration: BoxDecoration(color: Colors.white),
                 child: Center(
