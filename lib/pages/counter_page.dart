@@ -1,7 +1,4 @@
-import 'package:aula01/blocs/global_bloc.dart';
 import 'package:aula01/components/dark_container.dart';
-import 'package:aula01/components/global_widget.dart';
-import 'package:bloc_pattern/bloc_pattern.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -13,6 +10,11 @@ class CounterPage extends StatefulWidget {
 class _CounterPageState extends State<CounterPage> {
   int countA = 0;
   int countB = 0;
+
+  @override
+  void dispose() {
+    super.dispose();
+  }
 
   void increment(bool isA) {
     setState(() {
@@ -38,7 +40,6 @@ class _CounterPageState extends State<CounterPage> {
 
   @override
   Widget build(BuildContext context) {
-    FocusScope.of(context).requestFocus(_focusNode);
     return DarkContainer(
       ignorePadding: true,
       child: Center(
@@ -51,55 +52,54 @@ class _CounterPageState extends State<CounterPage> {
                 color: Colors.blue,
               ),
             ),
-              body: Container(
-                decoration: BoxDecoration(color: Colors.white),
-                child: Center(
-                  child: Text("Contagem atual: A = $countA, B = $countB",
-                      style: TextStyle(fontSize: 40)),
+            body: Container(
+              decoration: BoxDecoration(color: Colors.white),
+              child: Center(
+                child: Text("Contagem atual: A = $countA, B = $countB",
+                    style: TextStyle(fontSize: 40)),
+              ),
+            ),
+            floatingActionButton: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: <Widget>[
+                    Text("A:"),
+                    SizedBox(width: 16),
+                    FloatingActionButton(
+                      heroTag: "incrementBtnA",
+                      onPressed: () => increment(true),
+                      child: Icon(Icons.add),
+                    ),
+                    SizedBox(width: 16),
+                    FloatingActionButton(
+                      heroTag: "decrementBtnA",
+                      onPressed: () => decrement(true),
+                      child: Icon(Icons.remove),
+                    ),
+                  ],
                 ),
-              ),
-              floatingActionButton: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: <Widget>[
-                      Text("A:"),
-                      SizedBox(width: 16),
-                      FloatingActionButton(
-                        heroTag: "incrementBtnA",
-                        onPressed: () => increment(true),
-                        child: Icon(Icons.add),
-                      ),
-                      SizedBox(width: 16),
-                      FloatingActionButton(
-                        heroTag: "decrementBtnA",
-                        onPressed: () => decrement(true),
-                        child: Icon(Icons.remove),
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 16),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: <Widget>[
-                      Text("B:"),
-                      SizedBox(width: 16),
-                      FloatingActionButton(
-                        heroTag: "incrementBtnB",
-                        onPressed: () => increment(false),
-                        child: Icon(Icons.add),
-                      ),
-                      SizedBox(width: 16),
-                      FloatingActionButton(
-                        heroTag: "decrementBtnB",
-                        onPressed: () => decrement(false),
-                        child: Icon(Icons.remove),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
+                SizedBox(height: 16),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: <Widget>[
+                    Text("B:"),
+                    SizedBox(width: 16),
+                    FloatingActionButton(
+                      heroTag: "incrementBtnB",
+                      onPressed: () => increment(false),
+                      child: Icon(Icons.add),
+                    ),
+                    SizedBox(width: 16),
+                    FloatingActionButton(
+                      heroTag: "decrementBtnB",
+                      onPressed: () => decrement(false),
+                      child: Icon(Icons.remove),
+                    ),
+                  ],
+                ),
+              ],
             ),
           ),
         ),
