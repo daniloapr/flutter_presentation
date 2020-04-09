@@ -96,11 +96,7 @@ enum PageEnum {
   dartTitle,
   dart,
   whatIsFlutterTitle,
-<<<<<<< HEAD
   whatIsFlutter,
-=======
-  whatsIsFlutter,
   whyFlutter,
->>>>>>> d2059ff2de3316909bd8becd3c04b9196d592dd2
   counter
 }
