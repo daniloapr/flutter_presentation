@@ -1,5 +1,4 @@
 import 'package:aula01/components/dark_container.dart';
-import 'package:aula01/components/global_widget.dart';
 import 'package:aula01/res/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';

@@ -1,9 +1,13 @@
+import 'package:aula01/pages/adopters_page.dart';
 import 'package:aula01/pages/all_about_widgets_page.dart';
+import 'package:aula01/pages/chalenge_page.dart';
+import 'package:aula01/pages/chalenge_title_page.dart';
 import 'package:aula01/pages/content_page.dart';
 import 'package:aula01/pages/counter_page.dart';
 import 'package:aula01/pages/dart_page.dart';
 import 'package:aula01/pages/dart_title_page.dart';
 import 'package:aula01/pages/intro_page.dart';
+import 'package:aula01/pages/lets_code_page.dart';
 import 'package:aula01/pages/productivity_page.dart';
 import 'package:aula01/pages/what_is_flutter_page.dart';
 import 'package:aula01/pages/what_is_flutter_title_page.dart';
@@ -93,9 +97,27 @@ class SailorRoutes {
         },
       ),
       SailorRoute(
-        name: getRoute(PageEnum.adotpers),
+        name: getRoute(PageEnum.adopters),
         builder: (context, args, params) {
-          return WhyNotFlutterPage();
+          return AdoptersPage();
+        },
+      ),
+      SailorRoute(
+        name: getRoute(PageEnum.letsCode),
+        builder: (context, args, params) {
+          return LetsCodePage();
+        },
+      ),
+      SailorRoute(
+        name: getRoute(PageEnum.chalengeTitle),
+        builder: (context, args, params) {
+          return ChalengeTitlePage();
+        },
+      ),
+      SailorRoute(
+        name: getRoute(PageEnum.chalenge),
+        builder: (context, args, params) {
+          return ChalengePage();
         },
       ),
       SailorRoute(
@@ -116,6 +138,7 @@ class SailorRoutes {
   }
 }
 
+///Defines the order of the pages for navigation
 enum PageEnum {
   intro,
   content,
@@ -128,6 +151,9 @@ enum PageEnum {
   whyFlutterConclusion,
   productivity,
   whyNotFlutter,
-  adotpers,
-  counter
+  adopters,
+  letsCode,
+  counter,
+  chalengeTitle,
+  chalenge,
 }
