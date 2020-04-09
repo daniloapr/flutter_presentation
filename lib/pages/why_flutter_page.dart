@@ -10,7 +10,7 @@ class WhyFlutterPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return GlobalWidget(
       child: DarkContainer(
-          child: TopicList(title: "Por que Flutter? (vantagens)", list: {
+          child: TopicList(title: "Por que Flutter?", list: {
         "Performance nativa": [],
         "Documentação oficial completa": [],
         "UI flexível e completa": [],

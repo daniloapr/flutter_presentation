@@ -10,9 +10,9 @@ class DarkContainer extends StatelessWidget {
       : super(key: key);
   @override
   Widget build(BuildContext context) {
-    final _width = MediaQuery.of(context).size.width;
-    final _marginTop = _width / 16.0;
-    final _marginLeft = _width * 0.03;
+    // final _width = MediaQuery.of(context).size.width;
+    final _marginTop = 100.0;
+    final _marginLeft = 100.0;
     return Container(
       color: AppColors.black,
       child: Stack(

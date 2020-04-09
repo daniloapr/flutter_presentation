@@ -1,4 +1,6 @@
 import 'package:aula01/components/dark_container.dart';
+import 'package:aula01/components/global_widget.dart';
+import 'package:aula01/res/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -44,19 +46,21 @@ class _CounterPageState extends State<CounterPage> {
       ignorePadding: true,
       child: Center(
         child: Container(
+          height: 600,
+          width: 350,
           child: Scaffold(
             appBar: AppBar(
               automaticallyImplyLeading: false,
               title: Title(
                 child: Text("Contador"),
-                color: Colors.blue,
+                color: AppColors.black,
               ),
             ),
             body: Container(
               decoration: BoxDecoration(color: Colors.white),
               child: Center(
-                child: Text("Contagem atual: A = $countA, B = $countB",
-                    style: TextStyle(fontSize: 40)),
+                child: Text("Contagem:\n A = $countA, B = $countB",
+                    style: TextStyle(fontSize: 20)),
               ),
             ),
             floatingActionButton: Column(
@@ -68,15 +72,15 @@ class _CounterPageState extends State<CounterPage> {
                     Text("A:"),
                     SizedBox(width: 16),
                     FloatingActionButton(
-                      heroTag: "incrementBtnA",
-                      onPressed: () => increment(true),
-                      child: Icon(Icons.add),
-                    ),
-                    SizedBox(width: 16),
-                    FloatingActionButton(
                       heroTag: "decrementBtnA",
                       onPressed: () => decrement(true),
                       child: Icon(Icons.remove),
+                    ),
+                    SizedBox(width: 16),
+                    FloatingActionButton(
+                      heroTag: "incrementBtnA",
+                      onPressed: () => increment(true),
+                      child: Icon(Icons.add),
                     ),
                   ],
                 ),
@@ -87,15 +91,15 @@ class _CounterPageState extends State<CounterPage> {
                     Text("B:"),
                     SizedBox(width: 16),
                     FloatingActionButton(
-                      heroTag: "incrementBtnB",
-                      onPressed: () => increment(false),
-                      child: Icon(Icons.add),
-                    ),
-                    SizedBox(width: 16),
-                    FloatingActionButton(
                       heroTag: "decrementBtnB",
                       onPressed: () => decrement(false),
                       child: Icon(Icons.remove),
+                    ),
+                    SizedBox(width: 16),
+                    FloatingActionButton(
+                      heroTag: "incrementBtnB",
+                      onPressed: () => increment(false),
+                      child: Icon(Icons.add),
                     ),
                   ],
                 ),

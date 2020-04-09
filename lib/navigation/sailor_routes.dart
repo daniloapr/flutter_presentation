@@ -4,6 +4,7 @@ import 'package:aula01/pages/counter_page.dart';
 import 'package:aula01/pages/dart_page.dart';
 import 'package:aula01/pages/dart_title_page.dart';
 import 'package:aula01/pages/intro_page.dart';
+import 'package:aula01/pages/productivity_page.dart';
 import 'package:aula01/pages/what_is_flutter_page.dart';
 import 'package:aula01/pages/what_is_flutter_title_page.dart';
 import 'package:aula01/pages/why_flutter_conclusion_page.dart';
@@ -79,6 +80,12 @@ class SailorRoutes {
         },
       ),
       SailorRoute(
+        name: getRoute(PageEnum.productivity),
+        builder: (context, args, params) {
+          return ProductivityPage();
+        },
+      ),
+      SailorRoute(
         name: getRoute(PageEnum.counter),
         builder: (context, args, params) {
           return CounterPage();
@@ -106,5 +113,6 @@ enum PageEnum {
   whatIsFlutter,
   whyFlutter,
   whyFlutterConclusion,
+  productivity,
   counter
 }

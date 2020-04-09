@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'Capacitação em Flutter',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.cyan,
+        primarySwatch: Colors.lightBlue,
         // visualDensity: VisualDensity.adaptivePlatformDensity,
         fontFamily: 'montserrat',
       ),

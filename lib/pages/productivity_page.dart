@@ -3,8 +3,8 @@ import 'package:aula01/components/global_widget.dart';
 import 'package:aula01/components/main_title.dart';
 import 'package:flutter/material.dart';
 
-class WhyFlutterConclusionPage extends StatelessWidget {
-  const WhyFlutterConclusionPage({Key key}) : super(key: key);
+class ProductivityPage extends StatelessWidget {
+  const ProductivityPage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class WhyFlutterConclusionPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            MainTitle(text: "Mas porque mesmo?"),
+            MainTitle(text: "PRODUTIVIDADE"),
           ],
         ),
       )),
