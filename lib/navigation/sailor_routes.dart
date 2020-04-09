@@ -6,12 +6,16 @@ import 'package:aula01/pages/dart_title_page.dart';
 import 'package:aula01/pages/intro_page.dart';
 import 'package:aula01/pages/what_is_flutter_page.dart';
 import 'package:aula01/pages/what_is_flutter_title_page.dart';
+import 'package:aula01/pages/why_flutter_page.dart';
 import 'package:sailor/sailor.dart';
 
 class SailorRoutes {
   static final sailor = Sailor(
     options: SailorOptions(
-      defaultTransitions: [SailorTransition.slide_from_right],
+      defaultTransitions: [
+        SailorTransition.slide_from_right,
+        SailorTransition.slide_from_left
+      ],
     ),
   );
 
@@ -62,6 +66,12 @@ class SailorRoutes {
         },
       ),
       SailorRoute(
+        name: getRoute(PageEnum.whyFlutter),
+        builder: (context, args, params) {
+          return WhyFlutterPage();
+        },
+      ),
+      SailorRoute(
         name: getRoute(PageEnum.counter),
         builder: (context, args, params) {
           return CounterPage();
@@ -86,6 +96,11 @@ enum PageEnum {
   dartTitle,
   dart,
   whatIsFlutterTitle,
+<<<<<<< HEAD
   whatIsFlutter,
+=======
+  whatsIsFlutter,
+  whyFlutter,
+>>>>>>> d2059ff2de3316909bd8becd3c04b9196d592dd2
   counter
 }
