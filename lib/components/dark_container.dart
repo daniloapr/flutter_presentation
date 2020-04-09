@@ -4,8 +4,10 @@ import 'package:flutter/material.dart';
 
 class DarkContainer extends StatelessWidget {
   final Widget child;
+  final ignorePadding;
 
-  const DarkContainer({Key key, this.child}) : super(key: key);
+  const DarkContainer({Key key, this.child, this.ignorePadding = false})
+      : super(key: key);
   @override
   Widget build(BuildContext context) {
     final _width = MediaQuery.of(context).size.width;
@@ -23,7 +25,9 @@ class DarkContainer extends StatelessWidget {
             height: 100,
           ),
           Padding(
-            padding: EdgeInsets.only(top: _marginTop, left: _marginLeft),
+            padding: ignorePadding
+                ? EdgeInsets.all(0)
+                : EdgeInsets.only(top: _marginTop, left: _marginLeft),
             child: Stack(
               children: <Widget>[
                 if (child != null) child,
