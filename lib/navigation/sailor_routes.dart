@@ -86,6 +86,12 @@ class SailorRoutes {
         },
       ),
       SailorRoute(
+        name: getRoute(PageEnum.whyNotFlutter),
+        builder: (context, args, params) {
+          return WhyNotFlutterPage();
+        },
+      ),
+      SailorRoute(
         name: getRoute(PageEnum.counter),
         builder: (context, args, params) {
           return CounterPage();
@@ -114,5 +120,6 @@ enum PageEnum {
   whyFlutter,
   whyFlutterConclusion,
   productivity,
+  whyNotFlutter,
   counter
 }
