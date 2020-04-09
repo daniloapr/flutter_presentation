@@ -6,6 +6,7 @@ import 'package:aula01/pages/content_page.dart';
 import 'package:aula01/pages/counter_page.dart';
 import 'package:aula01/pages/dart_page.dart';
 import 'package:aula01/pages/dart_title_page.dart';
+import 'package:aula01/pages/finish_page.dart';
 import 'package:aula01/pages/intro_page.dart';
 import 'package:aula01/pages/lets_code_page.dart';
 import 'package:aula01/pages/productivity_page.dart';
@@ -126,6 +127,12 @@ class SailorRoutes {
           return CounterPage();
         },
       ),
+      SailorRoute(
+        name: getRoute(PageEnum.finish),
+        builder: (context, args, params) {
+          return FinishPage();
+        },
+      ),
     ]);
   }
 
@@ -156,4 +163,5 @@ enum PageEnum {
   counter,
   chalengeTitle,
   chalenge,
+  finish,
 }
