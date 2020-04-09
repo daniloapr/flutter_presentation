@@ -1,4 +1,5 @@
 import 'package:aula01/components/dark_container.dart';
+import 'package:aula01/components/global_widget.dart';
 import 'package:aula01/components/text_link.dart';
 import 'package:aula01/components/topic_list.dart';
 import 'package:flutter/material.dart';
@@ -9,8 +10,8 @@ class AllAboutWidgetsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: DarkContainer(
+    return GlobalWidget(
+      child: DarkContainer(
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         TopicList(title: "It's all about Widgets", list: {

@@ -1,5 +1,6 @@
 import 'package:aula01/components/bullet_list.dart';
 import 'package:aula01/components/dark_container.dart';
+import 'package:aula01/components/global_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -8,8 +9,8 @@ class DartPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: DarkContainer(
+    return GlobalWidget(
+      child: DarkContainer(
           child: Center(
         child: Padding(
           padding: const EdgeInsets.only(top: 80.0),
