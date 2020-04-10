@@ -1,7 +1,7 @@
 import 'package:aula01/pages/adopters_page.dart';
 import 'package:aula01/pages/all_about_widgets_page.dart';
-import 'package:aula01/pages/chalenge_page.dart';
-import 'package:aula01/pages/chalenge_title_page.dart';
+import 'package:aula01/pages/challenge_page.dart';
+import 'package:aula01/pages/challenge_title_page.dart';
 import 'package:aula01/pages/content_page.dart';
 import 'package:aula01/pages/counter_page.dart';
 import 'package:aula01/pages/dart_page.dart';
@@ -110,15 +110,15 @@ class SailorRoutes {
         },
       ),
       SailorRoute(
-        name: getRoute(PageEnum.chalengeTitle),
+        name: getRoute(PageEnum.challengeTitle),
         builder: (context, args, params) {
-          return ChalengeTitlePage();
+          return ChallengeTitlePage();
         },
       ),
       SailorRoute(
-        name: getRoute(PageEnum.chalenge),
+        name: getRoute(PageEnum.challenge),
         builder: (context, args, params) {
-          return ChalengePage();
+          return ChallengePage();
         },
       ),
       SailorRoute(
@@ -161,7 +161,7 @@ enum PageEnum {
   adopters,
   letsCode,
   counter,
-  chalengeTitle,
-  chalenge,
+  challengeTitle,
+  challenge,
   finish,
 }

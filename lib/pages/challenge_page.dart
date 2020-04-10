@@ -4,8 +4,8 @@ import 'package:aula01/components/topic_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class ChalengePage extends StatelessWidget {
-  const ChalengePage({Key key}) : super(key: key);
+class ChallengePage extends StatelessWidget {
+  const ChallengePage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

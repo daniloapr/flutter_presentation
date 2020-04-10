@@ -4,8 +4,8 @@ import 'package:aula01/components/main_title.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class ChalengeTitlePage extends StatelessWidget {
-  const ChalengeTitlePage({Key key}) : super(key: key);
+class ChallengeTitlePage extends StatelessWidget {
+  const ChallengeTitlePage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
