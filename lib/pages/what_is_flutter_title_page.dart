@@ -18,7 +18,7 @@ class WhatIsFlutterTitlePage extends StatelessWidget {
           children: <Widget>[
             MainTitle(text: "Flutter? É de comer?"),
             TextLink(
-              link: 'https://flutter.dev',
+              link: 'https://flutter.dev/',
             )
           ],
         )),

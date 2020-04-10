@@ -18,7 +18,7 @@ class ContentPage extends StatelessWidget {
             "Dart": [],
             "Porque o Flutter?": [],
             "Porque não?": [],
-            "Constuindo o primeiro app": [],
+            "Construindo o primeiro app": [],
             "Desafio": []
           }),
         ),

@@ -20,10 +20,10 @@ class AllAboutWidgetsPage extends StatelessWidget {
         SizedBox(height: 120),
         Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
           Row(children: [
-            Text("Mateiral Design: ",
+            Text("Material Design: ",
                 style: TextStyle(color: Colors.white, fontSize: 40)),
             TextLink(
-                text: "Material Components widgets",
+                text: "Material Components Widgets",
                 link:
                     "https://flutter.dev/docs/development/ui/widgets/material")
           ]),
@@ -34,7 +34,7 @@ class AllAboutWidgetsPage extends StatelessWidget {
               style: TextStyle(color: Colors.white, fontSize: 40),
             ),
             TextLink(
-                text: "Cupertino Components widgets",
+                text: "Cupertino Components Widgets",
                 link:
                     "https://flutter.dev/docs/development/ui/widgets/cupertino")
           ]),
@@ -45,9 +45,9 @@ class AllAboutWidgetsPage extends StatelessWidget {
               style: TextStyle(color: Colors.white, fontSize: 40),
             ),
             TextLink(
-                text: "WOTW: Youtube playlist",
+                text: "Youtube playlist",
                 link:
-                    "https://flutter.dev/docs/development/ui/widgets/cupertino")
+                    "https://www.youtube.com/playlist?list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG")
           ]),
         ])
       ])),

@@ -149,11 +149,11 @@ class SailorRoutes {
 enum PageEnum {
   intro,
   content,
+  whatIsFlutterTitle,
+  whatIsFlutter,
   allAboutWidgets,
   dartTitle,
   dart,
-  whatIsFlutterTitle,
-  whatIsFlutter,
   whyFlutter,
   whyFlutterConclusion,
   productivity,

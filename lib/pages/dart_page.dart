@@ -15,8 +15,7 @@ class DartPage extends StatelessWidget {
         "Linguagem multiplataforma, criada pela google, lançada em 2011.": [],
         "Foi criada inicialmente para substituir o Javascript (mas não deu certo)":
             [],
-        "Linguagem rápida, focada no cliente.": [],
-        "Otimizada para criação de UI": [],
+        "Linguagem rápida, otimizada para criação de UI": [],
         "Baseada nas boas práticas das linguagens tradicionais e modernas.": []
       })),
     );
