@@ -1,16 +1,13 @@
-# aula01
+# Capacitação em Flutter
 
-A new Flutter project.
+Capacitação interna em Flutter por Danilo Rêgo e João Gouveia, realizada na Cubos Tecnologia.
 
-## Getting Started
+## Como rodar a apresentação
 
-This project is a starting point for a Flutter application.
+A apresentação foi escrita em Flutter. É compatível com Android, iOS, Web e MacOS.
 
-A few resources to get you started if this is your first Flutter project:
+Para rodar, instale o flutter na sua máquina seguindo os passos da [documentação oficial](https://flutter.dev/docs/get-started/install).
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Licença
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+O código fonte da apresentação é de uso livre para fins educativos. Caso queira utilizar em outras apresentação, deve ser removida a marca da [Cubos Tecnologia](https://cubos.io) e/ou [Cubos Academy](https://cubos.academy) e deve ser dado os créditos para ambas as empresas.

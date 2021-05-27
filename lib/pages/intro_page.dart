@@ -18,7 +18,7 @@ class IntroPage extends StatelessWidget {
               ),
               SizedBox(height: 16),
               Text(
-                'Por Danilo Rêgo',
+                'Por Danilo Rêgo e João Gouveia',
                 style: TextStyle(
                   fontSize: 50,
                   color: Colors.white,
