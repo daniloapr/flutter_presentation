@@ -10,4 +10,4 @@ Para rodar, instale o flutter na sua máquina seguindo os passos da [documentaç
 
 ## Licença
 
-O código fonte da apresentação é de uso livre para fins educativos. Caso queira utilizar em outras apresentação, deve ser removida a marca da [Cubos Tecnologia](https://cubos.io) e/ou [Cubos Academy](https://cubos.academy) e deve ser dado os créditos para ambas as empresas.
+O código fonte da apresentação é de uso livre para fins educativos. Caso queira utilizar em outras apresentações, devem ser removidas as marcas da [Cubos Tecnologia](https://cubos.io) e/ou [Cubos Academy](https://cubos.academy) e devem ser dados os créditos para ambas as empresas.
